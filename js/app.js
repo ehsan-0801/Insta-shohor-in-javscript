@@ -54,6 +54,7 @@ const createPost = (post) => {
     const image = post.image;
     const userimage = post.userImage;
     const div = document.createElement( "article" );
+    
     div.classList.add( "post" );
     div.innerHTML = `
               <div class="post__header">
@@ -153,7 +154,8 @@ const displayLikedPosts = () => {
 
 const displayReportedPosts = () => {
     const reportedPosts = getReportedPosts();
-    posts.forEach((post) => {
+    document.getElementById( "reported" ).innerHTML = "";
+    reportedPosts.forEach((post) => {
         const div = createPost(post);
         document.getElementById( "reported" ).appendChild(div);
     });
