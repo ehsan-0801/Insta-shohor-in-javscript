@@ -88,9 +88,162 @@
         <h1>Reported posts</h1>
       </div>
     </main>
+    <section class="container border border-2 rounded border-dark" id="QandA">
+      <h2 class="fs-1 fw-bold text-danger text-center">
+        Questions <span class="text-primary">&</span>
+        <span class="text-success">Answers</span>
+      </h2>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              How does JavaScript work?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Javascript is the most popular language which is actually used for
+              web. Besides this, JavaScript is a single-threaded programming
+              language. That means JavaScript works in a single call stack
+              method. This call stack is a data structure which works in top to
+              down approach which means at time of execution of function it
+              starts from the top and when it is time to return from a function
+              it pops from the top of the function. Moreover, JavaScript is a
+              client side scripting Language which means JavaScript runs at the
+              client side inside the web browsers.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              What does JavaScript event loop do?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              As we all know that JavaScript executes on single thread. It just
+              uses some simple data structures. But sometimes it gives the
+              illustion of multi threading. Event loop comes play a vital role
+              here in Javascript asynchronus programming method. We know that
+              Javascript runs in a call stack process which keeps track of all
+              the operations. After executing the function it returns the
+              results in a stack and event queue is responsible her for sending
+              the new functions to the stack for processing. Here it follows the
+              queue data structure for execution. Whenever a async function is
+              called like
+              <span class="text-primary fw-bold">setTimeout()</span> it waits
+              untill the specified time. Event queue runs the async function in
+              cyclic manner and when it is time for async function to execute it
+              excutes the function. This task is executed by event loop. It
+              checks the stack whether it is empty or not.If it finds it empty
+              then sends the new function to execute.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              What are the differences between local storage and session
+              storage?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <table class="table table striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col text-center">Local Storage</th>
+                    <th scope="col text-center">Session Storage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Local Storage data never expires</td>
+                    <td>
+                      Session Storage data expires when the page session ends
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Local storage is accessible from any window</td>
+                    <td>
+                      Session storage is accessible from only the same tab
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>
+                      Local storage never expires and can get found later on
+                    </td>
+                    <td>Session data losts if the tab is closed</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Local storage's capacity is 10MB</td>
+                    <td>Session storage's capacity is 5MB</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Local storage can be removed manually</td>
+                    <td>
+                      Session storage do not need to be removed. It expires on
+                      closing of tab or window
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer></footer>
 
     <!-- add javascript  file  -->
     <script src="./js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
